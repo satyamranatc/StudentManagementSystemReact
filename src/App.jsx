@@ -3,20 +3,23 @@ import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import Home from "./Home.jsx";
 import Admin from "./Admin.jsx";
 import Dashboard from "./Dashboard.jsx";
+import { Users, BookOpen, GraduationCap, ChartBar } from 'lucide-react'
+
 
 const App = () => {
   return (
     <BrowserRouter>
       <div className="min-h-screen bg-gray-100">
         {/* Navigation Header */}
-        <nav className="bg-white shadow-md">
+        <nav className="sticky top-0 bg-white shadow-md">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex justify-between h-16">
               {/* Logo/Title */}
               <div className="flex items-center">
-                <span className="text-xl font-bold text-gray-800">
-                  Project Manager
-                </span>
+              <div className="flex items-center">
+            <GraduationCap className="mr-2 text-blue-600" size={30} />
+            <h1 className="text-2xl font-bold text-gray-800">Student Management System</h1>
+          </div>
               </div>
               
               {/* Navigation Links */}
